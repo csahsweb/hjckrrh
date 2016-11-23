@@ -1065,3 +1065,34 @@ function ug_theme_webform_element(&$variables) {
   return bootstrap_form_element($variables);
 }
 
+/**
+ * Pre-processes variables for the "book_navigation" theme hook.
+ *
+ * See template for list of available variables.
+ *
+ * @see book-navigation.tpl.php
+ *
+ * @ingroup theme_preprocess
+ */
+function ug_theme_preprocess_book_navigation(&$variables) {
+  /* https://www.drupal.org/node/1697570#comment-10357129 */
+  drupal_static_reset('_menu_build_tree');
+  /* Call default function from book.module. */
+  template_preprocess_book_navigation ($variables);
+}
+
+/**
+ * Returns HTML for a feed icon.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - url: An internal system path or a fully qualified external URL of the
+ *     feed.
+ *   - title: A descriptive title of the feed.
+ */
+function ug_theme_feed_icon($variables) {
+  $text = t('Subscribe to !feed-title', array('!feed-title' => $variables['title']));
+  $image = '<span class="fa fa-rss"></span>';
+  return l($image, $variables['url'], array('html' => TRUE, 'attributes' => array('class' => array('feed-icon', 'btn', 'btn-default'), 'title' => $text)));
+}
+
