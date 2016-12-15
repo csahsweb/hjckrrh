@@ -15,6 +15,17 @@ projects[captcha][version] = "1.3"
 
 projects[ckeditor][version] = "1.17"
 
+; CKEditor Plugins - Accessibility Checker, Balloon Panel
+libraries[balloonpanel][download][type] = "file"
+libraries[balloonpanel][destination] = "sites/all/modules/ckeditor/plugins"
+libraries[balloonpanel][version] = "4.6.1"
+libraries[balloonpanel][download][url] = "http://download.ckeditor.com/balloonpanel/releases/balloonpanel_4.6.1.zip"
+
+libraries[a11ychecker][download][type] = "file"
+libraries[a11ychecker][destination] = "sites/all/modules/ckeditor/plugins"
+libraries[a11ychecker][version] = "1.1.0"
+libraries[a11ychecker][download][url] = "http://download.ckeditor.com/a11ychecker/releases/a11ychecker_1.1.0.zip"
+  
 projects[ckeditor_link][version] = "2.4"
 
 projects[crumbs][version] = "2.5"

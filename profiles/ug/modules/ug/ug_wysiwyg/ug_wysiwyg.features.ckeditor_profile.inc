@@ -14,7 +14,7 @@ function ug_wysiwyg_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\'],
+    [\'A11ychecker\',\'Source\'],
     [\'Cut\',\'Copy\',\'PasteText\',\'PasteFromWord\',\'RemoveFormat\'],
     [\'Undo\',\'Redo\'],
     [\'Image\',\'Table\',\'HorizontalRule\',\'SpecialChar\'],
@@ -68,6 +68,20 @@ function ug_wysiwyg_ckeditor_profile_defaults() {
         'theme_config_js' => 't',
         'js_conf' => '',
         'loadPlugins' => array(
+          'a11ychecker' => array(
+            'name' => 'a11ychecker',
+            'desc' => 'Plugin file: a11ychecker',
+            'path' => '%plugin_dir%a11ychecker/',
+            'buttons' => FALSE,
+            'default' => 'f',
+          ),
+          'balloonpanel' => array(
+            'name' => 'balloonpanel',
+            'desc' => 'Plugin file: balloonpanel',
+            'path' => '%plugin_dir%balloonpanel/',
+            'buttons' => FALSE,
+            'default' => 'f',
+          ),
           'ckeditor_link' => array(
             'name' => 'drupal_path',
             'desc' => 'CKEditor Link - A plugin to easily create links to Drupal internal paths',
@@ -119,7 +133,7 @@ function ug_wysiwyg_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\'],
+    [\'A11ychecker\',\'Source\'],
     [\'Cut\',\'Copy\',\'PasteText\',\'PasteFromWord\',\'RemoveFormat\'],
     [\'Undo\',\'Redo\'],
     [\'Image\',\'Table\',\'HorizontalRule\',\'SpecialChar\'],
@@ -173,6 +187,20 @@ function ug_wysiwyg_ckeditor_profile_defaults() {
         'theme_config_js' => 'f',
         'js_conf' => '',
         'loadPlugins' => array(
+          'a11ychecker' => array(
+            'name' => 'a11ychecker',
+            'desc' => 'Plugin file: a11ychecker',
+            'path' => '%plugin_dir%a11ychecker/',
+            'buttons' => FALSE,
+            'default' => 'f',
+          ),
+          'balloonpanel' => array(
+            'name' => 'balloonpanel',
+            'desc' => 'Plugin file: balloonpanel',
+            'path' => '%plugin_dir%balloonpanel/',
+            'buttons' => FALSE,
+            'default' => 'f',
+          ),
           'ckeditor_link' => array(
             'name' => 'drupal_path',
             'desc' => 'CKEditor Link - A plugin to easily create links to Drupal internal paths',
