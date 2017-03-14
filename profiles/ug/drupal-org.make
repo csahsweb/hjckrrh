@@ -64,6 +64,8 @@ projects[link][version] = "1.4"
 
 projects[linkit][version] = "3.5"
 
+projects[masquerade][version] = "1.0-rc7"
+
 projects[menu_block][version] = "2.7"
 
 projects[metatag][version] = "1.20"
@@ -74,6 +76,8 @@ projects[migrate_d2d][version] = "2.1"
 projects[migrate_d2d][patch][] = "https://www.drupal.org/files/issues/migrate_d2d-menu_names_and_cleanup-1489858-11.patch"
 
 projects[module_filter][version] = "2.0"
+
+projects[module_missing_message_fixer][version] = "1.2"
 
 projects[oauth][version] = "3.3"
 
@@ -102,7 +106,11 @@ projects[role_delegation][version] = "1.1"
 projects[rules][version] = "2.9"
 projects[rules][patch][] = "https://www.drupal.org/files/issues/rules-fix-fatal-error-features-revert-2186363-2.patch"
 
+projects[scanner][version] = "1.0-beta1"
+
 projects[strongarm][version] = "2.0"
+
+projects[system_status][version] = "3.1"
 
 projects[token][version] = "1.6"
 
