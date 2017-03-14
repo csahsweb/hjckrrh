@@ -5,9 +5,6 @@ api = 2
 projects[auto_nodetitle][version] = "1.0"
 projects[auto_nodetitle][patch][] = "https://www.drupal.org/files/issues/auto_nodetitle-dont_double_escape_titles-565922-39-against-1.0-stable.patch"
 
-projects[ctools][version] = "1.11"
-projects[ctools][patch][] = "https://www.drupal.org/files/issues/views_panes-more_link_text-1000146-25.patch"
-
 projects[calendar][version] = "3.5"
 projects[calendar][patch][] = "https://www.drupal.org/files/issues/calendar-no_results-2489146-1-D7.patch"
 
@@ -18,6 +15,9 @@ projects[ckeditor][version] = "1.17"
 projects[ckeditor_link][version] = "2.4"
 
 projects[crumbs][version] = "2.5"
+
+projects[ctools][version] = "1.12"
+projects[ctools][patch][] = "https://www.drupal.org/files/issues/views_panes-more_link_text-1000146-25.patch"
 
 projects[date][version] = "2.9"
 
@@ -75,7 +75,7 @@ projects[migrate_d2d][patch][] = "https://www.drupal.org/files/issues/migrate_d2
 
 projects[module_filter][version] = "2.0"
 
-projects[oauth][version] = "3.2"
+projects[oauth][version] = "3.3"
 
 projects[panels_bootstrap_layouts][version] = "3.0"
 
@@ -109,7 +109,7 @@ projects[token][version] = "1.6"
 projects[twitter][version] = "5.11"
 projects[twitter][patch][] = "https://www.drupal.org/files/issues/twitter-doubleclass-2661088-5.patch"
 
-projects[views][version] = "3.14"
+projects[views][version] = "3.15"
 
 projects[views_tree][version] = "2.0"
 
