@@ -684,6 +684,13 @@ function ug_profile_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  /* Field: Content: Teaser */
+  $handler->display->display_options['fields']['field_profile_teaser']['id'] = 'field_profile_teaser';
+  $handler->display->display_options['fields']['field_profile_teaser']['table'] = 'field_data_field_profile_teaser';
+  $handler->display->display_options['fields']['field_profile_teaser']['field'] = 'field_profile_teaser';
+  $handler->display->display_options['fields']['field_profile_teaser']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_teaser']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_teaser']['element_default_classes'] = FALSE;
   /* Field: Content: Email */
   $handler->display->display_options['fields']['field_profile_email']['id'] = 'field_profile_email';
   $handler->display->display_options['fields']['field_profile_email']['table'] = 'field_data_field_profile_email';
@@ -845,6 +852,16 @@ function ug_profile_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 0;
   $handler->display->display_options['allow']['fields_override'] = 'fields_override';
+  $handler->display->display_options['argument_input'] = array(
+    'tid' => array(
+      'type' => 'panel',
+      'context' => 'entity:field_collection_item.archived',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Content: Has taxonomy term ID',
+    ),
+  );
   $handler->display->display_options['inherit_panels_path'] = '1';
   $export['pp6'] = $view;
 

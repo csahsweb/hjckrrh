@@ -95,6 +95,15 @@
         }
 
     /*---------------------
+    Teaser
+    ---------------------**/
+
+        /*--- Layout ---*/
+        .media-listing-page .media .media-teaser {
+            margin-bottom: 10px;
+        }
+
+    /*---------------------
     Text
     ---------------------**/
 
